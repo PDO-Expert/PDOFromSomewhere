@@ -1,0 +1,156 @@
+ /* css bestand van alle pagina's 
+ in 1 bestand gestopt omdat het voor de meeste pagina's maar een klein stukje css is*/
+ 
+  /* zorgt dat er geen witte randen rond het scherm zijn */
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+ /* Style voor de menubalk boven aan iedere pagina binnen de applicatie
+  Deze hebben geen class nodig aangezien dit alleenmaar voor de menubalk wordt gebruikt */
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2a6797;
+  }
+  
+  /* Style voor lijst binnen het menu */
+  li {float: left;}
+  
+  /* Style voor de lijst onderdelen binnen het menu */
+  li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Style voor wanneer de muis over het menu gaat */
+  li a:hover, .dropdown:hover .dropbtn {background-color: #ff9623;}
+  
+  li.dropdown {display: inline-block;}
+  
+  /* Style voor de DropDown menu's */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cccccc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style voor de DropDown menu items */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Style voor wanneer de muis over de menu lijst items gaat */
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* style voor de tabellen binnen de applicatie */
+  .tableStyle {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    margin-left: 10px;
+  }
+  
+   /* style voor de rand van de tabel */
+   .tableStyle td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* achtergrond van de tabel */
+  .tableStyle tr:nth-child(even){background-color: #f2f2f2;}
+  
+  /* achtergrond van de tabel wanneer de muis er over heen gaat */
+  .tableStyle tr:hover {background-color: #ff9623;}
+  
+
+  input[type=text], select {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=text]:focus {border: none;}
+  
+  /* style voor het formulier in handmatig_aanmelden.php */
+  .handmatig {
+    background-color: rgb(233, 233, 233);
+    padding: 12px 20px;
+    margin: 0;
+    margin-left: 10px;
+    display: inline-block;
+    border: solid 2px;
+    border-color: #ff9623;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .invoeren {
+    background-color: #cccccc;
+    padding: 12px 20px;
+    margin: 3px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .knop{
+    background-color: #2a6797;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 3px;
+  }
+
+
+  /* style voor de delete icons */
+  .icon {
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* style voor wanneer de muis over de delete icons gaat */
+  .icon:hover {color: white;}
+
+  /* style voor de 'aanpassen' knop in scholen.php */
+  .btn{
+    background-color: #2a6797;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* 10 pixels ruimte van de kant */
+  .pixel{
+    margin-left: 10px;
+  }
